@@ -79,19 +79,23 @@ ul a:hover{
     border: 2px solid transparent;
     cursor: pointer;
 }
-/* Responsive Styles for Tablets and Mobile */
+/*Responsive Styles for Tablets and Mobile*/
 
-/* للتابلت والشاشات المتوسطة (أقل من 992px) */
+/*responsive tablete 992px */
 @media screen and (max-width: 992px) {
   body {
     height: auto;
+    min-height: 100vh;
     padding: 20px 0;
   }
 
   .container {
-    width: 92%;
+    width: 90%;
+    margin: 0 auto; 
     height: auto;
     min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   header {
@@ -106,12 +110,13 @@ ul a:hover{
 
   .content {
     width: 80%;
-    margin-top: 20px;
+    margin: 20px auto 0 auto; 
     padding: 20px;
+    text-align: center; 
   }
 
   .content h2 {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .content p {
@@ -119,10 +124,13 @@ ul a:hover{
   }
 }
 
-/* للهواتف والشاشات الصغيرة (أقل من 600px) */
+/*responsive phone 600px */
 @media screen and (max-width: 600px) {
   .container {
     width: 95%;
+    margin: 0 auto; 
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   ul {
@@ -139,7 +147,7 @@ ul a:hover{
   }
 
   .content h2 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .content p {
@@ -149,14 +157,8 @@ ul a:hover{
   }
 
   .content button {
-    font-size: 20px;
+    font-size: 18px;
     padding: 8px 16px;
     width: 100%;
   }
 }
-.content button:hover{
-    background-color: transparent;
-    border-color: white;
-    color: white;
-}
- 
