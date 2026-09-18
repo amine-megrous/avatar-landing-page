@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,400;1,700&family=Ubuntu&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+body {
+  background-image: linear-gradient(to right, #01022d, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-image:
+    linear-gradient(to right, #01022de5 30%, #00000088),
+    url(index.webp);
+    width: 88%;
+    height: 640px;
+    background-position: center;
+}
+.container:hover {
+  background-image: 
+  linear-gradient(to right, #01022de5 20%,transparent),url(index.webp);
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+.logo{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+ul{
+    width: 60%;
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: white;
+    
+    
+}
+.content{
+    color: white;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+.content h2{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.content p{
+    letter-spacing: 2px;
+    width: 400px;
+    padding: 20px 0;
+}
+.content button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+/* Complete Responsive CSS for Tablet & Mobile*/
+
+/* tablete 992px */
+@media screen and (max-width: 992px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 92%;
+    margin: 0 auto; 
+    height: auto;
+    min-height: 100vh;
+    background-position: 75% center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    width: 85%;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    text-align: center; /* توسيط المحتوى والنصوص */
+  }
+
+  .content h2 {
+    font-size: 80px;
+    padding-bottom:2rem ;
+  }
+
+  .content p {
+    font-size:32px ;
+    width: 100%;
+  }
+}
+
+/* phone 600px*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    background-position: 65% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .content {
+    width: 90%;
+    padding: 15px 10px;
+    margin-top: 10px;
+  }
+
+  .content h2 {
+    font-size: 60px;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+
+  .content button {
+    font-size: 20px;
+    padding: 8px 16px;
+    width: 100%; 
+  }
+}
